@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto">
+	<uses-permission android:name="android.permission.INTERNET" />
+  <application android:label="AvaloniaTest" android:icon="@drawable/Icon">
+    <!-- For Google AdMob -->
+    <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-4848484848484848~6868686868" />
+
+  </application>
+
+  <!-- For the AD ID for better Ads and more revenue-->
+  <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>

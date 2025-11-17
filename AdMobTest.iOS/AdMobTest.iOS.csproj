@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0-ios26.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia.iOS" Version="11.3.8" />
+    <PackageReference Include="Jc.AdMob.Avalonia.iOS" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdMobTest\AdMobTest.csproj" />
+  </ItemGroup>
+
+  <Target Name="LinkWithSwift" DependsOnTargets="_ParseBundlerArguments;_DetectSdkLocations" BeforeTargets="_LinkNativeExecutable">
+    <PropertyGroup>
+      <_SwiftPlatform Condition="$(RuntimeIdentifier.StartsWith('iossimulator-'))">iphonesimulator</_SwiftPlatform>
+      <_SwiftPlatform Condition="$(RuntimeIdentifier.StartsWith('ios-'))">iphoneos</_SwiftPlatform>
+    </PropertyGroup>
+    <ItemGroup>
+      <_CustomLinkFlags Include="-L" />
+      <_CustomLinkFlags Include="/usr/lib/swift" />
+      <_CustomLinkFlags Include="-L" />
+      <_CustomLinkFlags Include="$(_SdkDevPath)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(_SwiftPlatform)" />
+      <_CustomLinkFlags Include="-Wl,-rpath" />
+      <_CustomLinkFlags Include="-Wl,/usr/lib/swift" />
+    </ItemGroup>
+  </Target>
+</Project>
