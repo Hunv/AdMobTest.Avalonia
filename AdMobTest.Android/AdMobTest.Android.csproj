@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <PackageReference Include="Avalonia.Android" Version="11.3.9" />
-    <PackageReference Include="Jc.AdMob.Avalonia.Android" Version="3.3.0" />
+    <PackageReference Include="Jc.AdMob.Avalonia.Android" Version="4.0.0" />
     <PackageReference Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.0.1.17" />
   </ItemGroup>
 
