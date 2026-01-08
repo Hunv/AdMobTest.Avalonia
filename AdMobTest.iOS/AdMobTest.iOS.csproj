@@ -4,6 +4,18 @@
     <TargetFramework>net9.0-ios26.0</TargetFramework>
     <SupportedOSPlatformVersion>15.0</SupportedOSPlatformVersion>
     <Nullable>enable</Nullable>
+
+    <ProvisioningType>automatic</ProvisioningType>    
+    <PublishAot>False</PublishAot>
+    <IsPublishable>True</IsPublishable>
+
+    <PublishTrimmed>True</PublishTrimmed>
+    <MtouchLink>None</MtouchLink>
+    <MtouchVerbosity>5</MtouchVerbosity>
+    <TrimMode>partial</TrimMode>
+    <EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>
+
+    <MtouchExtraArgs>--registrar:static --optimize=-remove-dynamic-registrar --marshal-objectivec-exceptions:disable --optimize=-inline-intptr-size --optimize=-inline-isdirectbinding</MtouchExtraArgs>
   </PropertyGroup>
 
   <ItemGroup>
