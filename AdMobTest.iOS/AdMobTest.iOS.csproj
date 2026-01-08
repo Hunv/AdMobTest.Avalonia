@@ -9,11 +9,11 @@
     <PublishAot>False</PublishAot>
     <IsPublishable>True</IsPublishable>
 
-    <PublishTrimmed>True</PublishTrimmed>
+    <!--<PublishTrimmed>True</PublishTrimmed>
     <MtouchLink>None</MtouchLink>
     <MtouchVerbosity>5</MtouchVerbosity>
     <TrimMode>partial</TrimMode>
-    <EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>
+    <EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>-->
 
     
   </PropertyGroup>
