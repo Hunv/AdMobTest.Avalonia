@@ -15,7 +15,7 @@
     <TrimMode>partial</TrimMode>
     <EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>-->
 
-    <MtouchExtraArgs>--registrar:static --optimize=-remove-dynamic-registrar --marshal-objectivec-exceptions:disable --optimize=-inline-intptr-size --optimize=-inline-isdirectbinding</MtouchExtraArgs>
+    
   </PropertyGroup>
 
   <ItemGroup>
