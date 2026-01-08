@@ -5,7 +5,7 @@
     <SupportedOSPlatformVersion>15.0</SupportedOSPlatformVersion>
     <Nullable>enable</Nullable>
 
-    <ProvisioningType>automatic</ProvisioningType>    
+    <!--<ProvisioningType>automatic</ProvisioningType>    
     <PublishAot>False</PublishAot>
     <IsPublishable>True</IsPublishable>
 
@@ -13,7 +13,7 @@
     <MtouchLink>None</MtouchLink>
     <MtouchVerbosity>5</MtouchVerbosity>
     <TrimMode>partial</TrimMode>
-    <EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>
+    <EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>-->
 
     <MtouchExtraArgs>--registrar:static --optimize=-remove-dynamic-registrar --marshal-objectivec-exceptions:disable --optimize=-inline-intptr-size --optimize=-inline-isdirectbinding</MtouchExtraArgs>
   </PropertyGroup>
