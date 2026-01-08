@@ -43,6 +43,9 @@
       <_CustomLinkFlags Include="$(_SdkDevPath)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(_SwiftPlatform)" />
       <_CustomLinkFlags Include="-Wl,-rpath" />
       <_CustomLinkFlags Include="-Wl,/usr/lib/swift" />
+      <!-- Force weak linking for Swift symbols -->
+      <_CustomLinkFlags Include="-Wl,-weak_library" />
+      <_CustomLinkFlags Include="-Wl,/usr/lib/swift/libswiftCore.dylib" />
     </ItemGroup>
   </Target>
 </Project>
